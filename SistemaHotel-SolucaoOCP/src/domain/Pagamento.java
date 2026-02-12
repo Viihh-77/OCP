@@ -1,21 +1,19 @@
-package OCP_VIOLACAO;
+package domain;
+
+import strategies.MetodoPagamento;
 
 public class Pagamento {
 
     private String id;
     private double valor;
     private String emailCliente;
-    private TipoPagamento tipoPagamento;
+    private MetodoPagamento metodoPagamento;
 
-    public enum TipoPagamento {
-        CARTAO, PAYPAL, BOLETO
-    }
-
-    public Pagamento(String id, double valor, String emailCliente, TipoPagamento tipoPagamento) {
+    public Pagamento(String id, double valor, String emailCliente, MetodoPagamento metodoPagamento) {
         this.id = id;
         this.valor = valor;
         this.emailCliente = emailCliente;
-        this.tipoPagamento = tipoPagamento;
+        this.metodoPagamento = metodoPagamento;
     }
 
     public String getId() {
@@ -30,8 +28,8 @@ public class Pagamento {
         return emailCliente;
     }
 
-    public TipoPagamento getTipoPagamento() {
-        return tipoPagamento;
+    public MetodoPagamento getMetodoPagamento() {
+        return metodoPagamento;
     }
 
     public void setId(String id) {
@@ -46,7 +44,7 @@ public class Pagamento {
         this.emailCliente = emailCliente;
     }
 
-    public void setTipoPagamento(TipoPagamento tipoPagamento) {
-        this.tipoPagamento = tipoPagamento;
+    public void setMetodoPagamento(MetodoPagamento metodoPagamento) {
+        this.metodoPagamento = metodoPagamento;
     }
 }
