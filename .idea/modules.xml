@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AtividadeOCP.iml" filepath="$PROJECT_DIR$/AtividadeOCP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SistemaHotel-ViolacaoOCP/SistemaHotel-ViolacaoOCP.iml" filepath="$PROJECT_DIR$/SistemaHotel-ViolacaoOCP/SistemaHotel-ViolacaoOCP.iml" />
     </modules>
   </component>
 </project>
