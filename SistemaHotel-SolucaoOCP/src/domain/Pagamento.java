@@ -1,7 +1,5 @@
 package domain;
 
-import strategies.MetodoPagamento;
-
 public class Pagamento {
 
     private String id;
